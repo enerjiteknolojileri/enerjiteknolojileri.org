@@ -1,7 +1,7 @@
 .homepage-carousel {
     max-height: 480px;
+    aspect-ratio: 16/9;
     display: flex;
-    flex-flow: row;
 }
 
 .homepage-carousel img {

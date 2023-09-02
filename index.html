@@ -14,7 +14,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand d-grid justify-content-center" href="#">
                 <img src="assets/logo.png" class="object-fit-contain w-100" height="64">
             </a>
@@ -29,32 +29,35 @@
                         <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ekibimiz.html">Ekibimiz</a>
+                        <a class="nav-link" href="ekip.html">Ekibimiz</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#projeler" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="projeler.html" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Projeler
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">SUNSETT</a></li>
+                            <li><a class="dropdown-item" href="#">NESIL V2</a></li>
+                            <li><a class="dropdown-item" href="#">TUAR</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">HIDROKARTAL</a></li>
                             <li><a class="dropdown-item" href="#">HIDROSETT-2</a></li>
                             <li><a class="dropdown-item" href="#">HIDROSETT-3</a></li>
-                            <li><a class="dropdown-item" href="#">SETTAR</a></li>
-                            <li><a class="dropdown-item" href="#">TUAR</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">NESIL V2</a></li>
+                            <li><a class="dropdown-item" href="#">SETTAR</a></li>
                             <li><a class="dropdown-item" href="#">SETTAR-2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sponsorlarimiz.html">Sponsorlarımız</a>
+                        <a class="nav-link" href="#sponsorlarimiz">Sponsorlarımız</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
@@ -78,13 +81,13 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner homepage-carousel">
             <div class="carousel-item active">
-                <img src="assets/images/home/1.jpg" class="d-block" alt="...">
+                <img src="assets/images/home/1.jpg">
             </div>
             <div class="carousel-item">
-                <img src="assets/images/home/2.jpg" class="d-block" alt="...">
+                <img src="assets/images/home/2.jpg">
             </div>
             <div class="carousel-item">
-                <img src="assets/images/home/3.jpg" class="d-block" alt="...">
+                <img src="assets/images/home/3.jpg">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -100,7 +103,7 @@
     </div>
     <div class="container my-5">
         <div class="row">
-            <h1 class="h1 fw-bold sett-primary-text">
+            <h1 class="h1 fw-bold sett-primary-text mb-4">
                 Biz Kimiz?
             </h1>
             <p>
@@ -126,7 +129,13 @@
             <div class="p-5 mb-4 bg-light rounded-3">
                 <div class="container-fluid py-3">
                     <div class="row d-flex align-items-center">
-                        <div class="col-md-8">
+                        <div class="col-md-4 order-md-1 p-5">
+                            <div class="ratio ratio-1x1">
+                                <img class="rounded-circle object-fit-cover"
+                                    src="assets/images/projects/hidrocartal.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-0">
                             <div class="d-flex align-items-center">
                                 <h1 class="display-5 fw-bold d-inline me-3">HIDROKARTAL</h1>
                                 <span class="badge display-1 fw-bold fs-6 sett-primary-color-bg">
@@ -134,17 +143,13 @@
                                 </span>
                             </div>
                             <p class="fs-4">
-                                İlk aracımız olan Hidrokartal ile
-                                Tübitak 2007 Hidromobil Yarış-
-                                masında ilk derecemizi aldık.
+                                SETT ekibi olarak, Tübitak 2007 Hidromobil Yarışması'nda HİDROKARTAL aracımızla Türkiye
+                                ikincisi olmanın gururunu yaşamaktayız. Hidrojen yakıt hücreli araç tasarımı ve
+                                performansı konusundaki bu başarı, teknik bilgi, yaratıcılık ve ekip çalışması
+                                gerektiren bir sürecin ürünüdür. Bu deneyim, gelecekteki sürdürülebilir enerji ve taşıma
+                                çözümleri alanındaki katkılarımızı daha da ileriye taşımaktadır.
                             </p>
                             <button class="btn btn-primary btn-lg" type="button">İncele</button>
-                        </div>
-                        <div class="col-md-4 px-5">
-                            <div class="ratio ratio-1x1">
-                                <img class="rounded-circle object-fit-cover"
-                                    src="assets/images/projects/hidrocartal.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,7 +159,13 @@
             <div class="p-5 mb-4 bg-light rounded-3">
                 <div class="container-fluid py-3">
                     <div class="row d-flex align-items-center">
-                        <div class="col-md-8">
+                        <div class="col-md-4 p-5 order-md-1">
+                            <div class="ratio ratio-1x1">
+                                <img class="rounded-circle object-fit-cover" src="assets/images/projects/settar.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 order-md-0">
                             <div class="d-flex align-items-center">
                                 <h1 class="display-5 fw-bold d-inline me-3">SETTAR</h1>
                                 <span class="badge display-1 fw-bold fs-6 sett-primary-color-bg">
@@ -171,29 +182,70 @@
                             </p>
                             <button class="btn btn-primary btn-lg" type="button">İncele</button>
                         </div>
-                        <div class="col-md-4 px-5">
-                            <div class="ratio ratio-1x1">
-                                <img class="rounded-circle object-fit-cover" src="assets/images/projects/settar.png"
-                                    alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="text-center mt-3">
+            <a class="btn btn-primary btn-lg px-5" href="projeler.html" role="button">Tüm Projeleri İncele</a>
+        </div>
         <hr class="my-5">
-        <h1 class="h1 display-4 mb-5 fw-bold sett-primary-text align-center text-center">
+        <h1 id="sponsorlarimiz" class="h1 display-4 mb-5 fw-bold sett-primary-text align-center text-center">
             Sponsorlarımız
         </h1>
-        <div class="row pb-5">
-            <div class="col-6 m-auto">
+        <div class="row py-3">
+            <div class="col-6 m-auto text-center">
                 <img src="assets/images/sponsor/alkan-group.png" alt="">
             </div>
-            <div class="col-6 m-auto">
+            <div class="col-6 m-auto text-center">
                 <img src="assets/images/sponsor/yilka.png" alt="">
             </div>
         </div>
     </div>
+    <footer class="px-5 bg-dark">
+        <div class="container">
+            <div class="row pt-5 pb-1">
+                <div class="col-4">
+                    <p class="fs-4 fw-bold text-light mb-2">Projeler</p>
+                    <ul class="p-0">
+                        <li class="text-light list-unstyled">SUNSETT</li>
+                        <li class="text-light list-unstyled">NESIL V2</li>
+                        <li class="text-light list-unstyled">TUAR</li>
+                        <li class="text-light list-unstyled">HIDROKARTAL</li>
+                        <li class="text-light list-unstyled">HIDROSETT-2</li>
+                        <li class="text-light list-unstyled">HIDROSETT-3</li>
+                        <li class="text-light list-unstyled">SETTAR</li>
+                        <li class="text-light list-unstyled">SETTAR-2</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <p class="fs-5 fw-bold text-light mb-2">Ekibimiz</p>
+                    <ul class="p-0">
+                        <li class="text-light list-unstyled">Yönetim Kadrosu</li>
+                        <li class="text-light list-unstyled">Elektrik Takımı</li>
+                        <li class="text-light list-unstyled">Makine Takımı</li>
+                        <li class="text-light list-unstyled">Yazılım Takımı</li>
+                        <li class="text-light list-unstyled">Malzeme Takımı</li>
+                        <li class="text-light list-unstyled">Sponsor Takımı</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <p class="fs-5 fw-bold text-light mb-2">İletişim</p>
+                    <ul class="p-0">
+                        <li class="text-light list-unstyled">sett@enerjiteknolojileri.org</li>
+                        <li class="text-light list-unstyled">Instagram</li>
+                        <li class="text-light list-unstyled">LinkedIn</li>
+                        <li class="text-light list-unstyled">GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row py-4">
+                <small class="text-light text-center py-2">
+                    &copy; SETT 2023, Bütün hakları saklıdır.
+                </small>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
