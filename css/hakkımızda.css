@@ -229,7 +229,6 @@
 .rota-section {
     text-align: center;
     padding: 40px;
-    font-family: 'Montserrat', sans-serif;
     margin-bottom: -80px;
 }
 
@@ -243,7 +242,7 @@
     font-size: 18px;
     line-height: 1.8;
     color: #484b50; /* Metin rengi */
-    max-width: 700px;
+    max-width: 1000px;
     margin: 40px auto; /* Ortalanmış ve alttan boşluklu */
     margin-top: 70px;
 }
