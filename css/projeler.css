@@ -1,0 +1,108 @@
+.proje-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.proje-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.proje-title-image {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.proje-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.proje-image-part {
+    flex: 1;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.proje-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.proje-text-part {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    padding: 20px;
+}
+
+.proje-text-part h3 {
+    font-size: 28px;
+    color: #Fe9600;
+    margin-bottom: 20px;
+}
+
+.proje-text-part p {
+    font-size: 18px;
+    color: #484b50;
+    line-height: 1.6;
+}
+
+.yarista-kapsam {
+    margin-top: 100px;
+    text-align: left;
+    margin-right: auto;
+}
+
+.yarista-image {
+    width: 250px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* Küçük ekranlarda reverse sınıfını etkisiz hale getiriyoruz */
+    .reverse {
+        flex-direction: column !important;
+    }
+
+    .proje-content {
+        flex-direction: column;
+        align-items: center; /* İçeriği ortalamak için */
+        text-align: center; /* Metinleri ortalamak için */
+    }
+
+    .proje-image-part, .proje-text-part {
+        max-width: 100%;
+        text-align: center;
+        order: 1; /* Resim önce gelir */
+    }
+
+    .proje-text-part h3 {
+        order: 2; /* Başlık ikinci sırada gelir */
+        font-size: 24px; /* Başlık boyutu küçük ekranlar için ayarlanır */
+    }
+
+    .proje-text-part p {
+        order: 3; /* Yazı üçüncü sırada gelir */
+        font-size: 16px; /* Küçük ekranlar için yazı boyutu küçültülür */
+    }
+
+    .yarista-kapsam {
+        margin-top: 20px;
+        text-align: center;
+        order: 4; /* Yarışta kapsama en son sırada gelir */
+    }
+
+    .yarista-image {
+        width: 200px; /* Yarışta kapsama görüntüsü boyutu küçültülür */
+    }
+}

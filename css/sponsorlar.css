@@ -1,0 +1,77 @@
+.sponsorlar-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #Fe9600;
+    margin-bottom: 30px;
+}
+.sponsor-group {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 2px solid #484b50;
+    border-radius: 12px;
+    max-width: 800px; /* Maksimum genişlik */
+    background-color: #fcf8f3;
+    position: relative; /* Kutunun üstüne yazı yerleştirmek için gerekli */
+}
+
+.sponsor-group h3 {
+    font-size: 24px;
+    color: #484b50;
+    background-color: #fcf8f3; /* Başlık arka planı */
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 12px;
+    position: absolute; /* Yazıyı kutunun üzerine taşımak için */
+    top: -25px; /* Üstten boşluk ayarı */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Üstte kalması için z-index ayarı */
+}
+
+.sponsor-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Sponsorlar arası boşluk */
+    margin-top: 40px; /* Kutunun üst kısmına boşluk bırakır */
+}
+
+.sponsor-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px; /* Yuvarlak köşeler */
+    
+}
+
+@media (max-width: 768px) {
+    .sponsor-image {
+        width: 80px; /* Küçük ekranlarda boyutları küçült */
+        height: 80px;
+    }
+
+    .sponsor-group {
+        max-width: 100%;
+    }
+    .section-title {
+        font-size: 24px;
+        color: #Fe9600;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .sponsor-row {
+        gap: 30px; /* Geniş ekranlarda daha fazla boşluk */
+    }
+    .sponsor-image {
+        width: 140px; /* Daha geniş ekranlarda daha büyük sponsor logoları */
+        height: 140px;
+    }
+}
+

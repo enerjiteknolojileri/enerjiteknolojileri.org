@@ -1,0 +1,63 @@
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #Fe9600;
+}
+
+.ekip-resim-container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ekip-image {
+    width: 100%;
+    height: auto; /* Yükseklik otomatik ayarlanır */
+    object-fit: contain; /* Resim, formunu koruyarak sığdırılır */
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+
+/* Metin kısmı */
+.team-description {
+    max-width: 950px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #484b50;
+}
+
+.team-description p {
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .team-section h2 {
+        font-size: 28px;
+    }
+
+    .ekip-image {
+        max-width: 100%;
+        height: auto; /* Mobilde de yüksekliği otomatik olacak */
+        object-fit: contain; /* Resim mobilde de tam sığacak şekilde */
+    }
+
+    .team-description {
+        font-size: 14px;
+    }
+}
+
+
+
+ 

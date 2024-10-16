@@ -1,0 +1,320 @@
+.hakkimizda-header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+  }
+  
+
+  .hakkimizda-header h1 {
+    font-size: 36px;  /* Başlık yazı boyutu */
+    color: #484b50;   /* Başlık metin rengi */
+    margin: 10px 0;
+  }
+  
+  .hakkimizda-header .highlight {
+    color: #Fe9600; 
+    font-size: 36px;
+  }
+  
+
+.hakkimizda-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 20px; /* Boşlukları genişlettim */
+    flex-wrap: wrap; /* Responsive durumda alt alta geçmesi için flex-wrap ekledim */
+}
+
+.hakkimizda-image-part {
+    flex: 1;
+    position: relative;
+    margin-left: 140px;
+}
+
+.hakkimizda-image-wrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.hakkimizda-image {
+    max-width: 460px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.hakkimizda-overlay-icon {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.hakkimizda-overlay-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.hakkimizda-text-part {
+    flex: 1;
+    margin-right: 100px;
+}
+
+.hakkimizda-text-part h2 {
+    font-size: 48px;
+    color: #f4a700;
+    margin-bottom: 30px; /* Fazla boşluğu küçülttüm */
+}
+
+.hakkimizda-text-part p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 20px; /* Fazla boşluğu küçülttüm */
+    color: #484b50;
+}
+
+.hakkimizda-background {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #484b50; /* Gri arka plan */
+    z-index: -1;
+    border-radius: 12px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1386px) {
+    .hakkimizda-section {
+        padding: 30px; /* Daha küçük padding */
+        gap: 60px; /* Daha küçük boşluk */
+    }
+
+    .hakkimizda-image-part {
+        margin-left: 0; /* Sol boşluğu kaldırdım */
+    }
+
+    .hakkimizda-text-part {
+        margin-right: 0; /* Sağ boşluğu kaldırdım */
+    }
+}
+
+@media (max-width: 768px) {
+    .hakkimizda-section {
+        flex-direction: column; /* Mobilde dikey hizalama */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hakkimizda-image-part,
+    .hakkimizda-text-part {
+        width: 100%; /* Tam genişlik sağladım */
+        margin: 0; /* Kenar boşluklarını sıfırladım */
+    }
+
+    .hakkimizda-image {
+        max-width: 100%; /* Görseli genişletecek şekilde ayarladım */
+    }
+
+    .hakkimizda-text-part h2 {
+        font-size: 32px; /* Başlık boyutunu küçülttüm */
+    }
+
+    .hakkimizda-text-part p {
+        margin-top: 15px; /* Paragrafın üst boşluğunu azalttım */
+    }
+}
+
+.hedef-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    gap: 190px; /* Görsel ile metin arasındaki boşluk */
+    background-color: #484b50; /* Gri arka plan */
+    margin-top: 50px; /* Üst boşluk ekledim */
+    border-radius: 12px;
+}
+
+.hedef-image-wrapper{
+    flex: 1;
+    position: relative;
+    margin-right: 140px;
+    width: fit-content;
+    margin-bottom: 35px;
+}
+
+.hedef-image{
+    max-width: 460px;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; /* Resmi turuncu arka planın üstüne yerleştir */
+    border-radius: 12px;
+}
+
+.hedef-background {
+    position: absolute;
+    top: 30px; /* Arka planı yukarı doğru kaydırdım */
+    left: 30px; /* Arka planı sola kaydırdım */
+    width: 100%;
+    height: 100%;
+    background-color: #Fe9600; /* Turuncu arka plan */
+    z-index: 1; /* Arka planı resmin arkasında tut */
+    border-radius: 12px;
+}
+
+.hedef-text-part {
+    flex: 1;
+    margin-left: 140px;
+}
+
+.hedef-text-part h2 {
+    font-size: 48px;
+    color: #Fe9600; /* Turuncu metin */
+    margin-bottom: 30px; /* Başlık ile paragraf arası boşluk */
+}
+
+.hedef-text-part p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 20px; /* Paragraf üst boşluk */
+    color: #ffffff; /* Beyaz metin */
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1386px) {
+    .hedef-section {
+        padding: 30px; /* Daha küçük padding */
+        gap: 60px; /* Daha küçük boşluk */
+    }
+
+    .hedef-image-wrapper {
+        margin-right: 0; /* Sağ boşluğu kaldırdım */
+    }
+
+    .hedef-text-part {
+        margin-left: 0; /* Sol boşluğu kaldırdım */
+    }
+}
+
+@media (max-width: 768px) {
+    .hedef-section {
+        flex-direction: column; /* Mobilde dikey hizalama */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hedef-image-wrapper,
+    .hedef-text-part {
+        width: 100%; /* Tam genişlik sağladım */
+        margin: 0; /* Kenar boşluklarını sıfırladım */
+    }
+
+    .hedef-image {
+        max-width: 100%; /* Görseli genişletecek şekilde ayarladım */
+    }
+
+    .hedef-text-part h2 {
+        font-size: 32px; /* Başlık boyutunu küçülttüm */
+    }
+
+    .hedef-text-part p {
+        margin-top: 15px; /* Paragrafın üst boşluğunu azalttım */
+    }
+}
+
+
+.rota-section {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: -80px;
+}
+
+.rota-section h2 {
+    font-size: 48px;
+    color: #Fe9600; /* Turuncu başlık */
+    margin-bottom: 40px;
+}
+
+.rota-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #484b50; /* Metin rengi */
+    max-width: 700px;
+    margin: 40px auto; /* Ortalanmış ve alttan boşluklu */
+    margin-top: 70px;
+}
+
+
+.eco-logo img {
+    width: 300px;
+    height: auto;
+}
+
+/* Wrapper for the card to make sure it's centered */
+.card2-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the card horizontally */
+    margin-bottom: 40px;
+}
+
+.card2 {
+    width: 400px;
+    height: 100px;
+    background: #353535;
+    transform-style: preserve-3d;
+    transform: perspective(30rem) rotateX(30deg);
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #fff 70%,
+        #353535 70%,
+        #353535 100%
+    );
+    background-size: 120px;
+    animation: animateRoad 0.5s linear infinite;
+}
+@keyframes animateRoad {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -120px;
+    }
+}
+
+.card2::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    background-color: #272727;
+    transform-origin: top;
+    transform: perspective(30rem) rotateX(-30deg);
+    box-shadow: 0 10px 20px -2px #272727;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.shadow {
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+}

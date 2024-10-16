@@ -1,0 +1,135 @@
+.anka-tanitim {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.anka-tanitim h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+} 
+
+.highlight-text {
+    font-size: 36px; /* Yazı büyüklüğü */
+    text-align: center; /* Ortalı */
+  }
+  
+  .orange-text {
+    color: #Fe9600; /* Turuncu */
+  }
+  
+  .gray-text {
+    color: #484b50; /* Gri */
+  }
+  
+
+.arac-ozellik {
+    font-size: 36px;
+    color: #Fe9600; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.anka-tanitim p {
+    font-size: 16px; 
+    color: #484b50; /* Metin rengi */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.center-image {
+    max-width: 85%;
+    height: auto;
+}
+
+.description-box {
+    
+    
+    background-color: #484b50; /* Arka plan rengi */
+    padding: 70px;
+    border-radius: 12px; /* Köşe yuvarlatma */
+    color: white; /* Yazı rengi */
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.description-box p{
+    max-width: 800px; /* Genişlik ayarı */
+    margin: 0 auto; /* Ortalama */
+    font-size: 16px;
+    
+    
+}
+
+
+.vehicle-specs {
+    max-width: 100%; /* Tablo genişliğini sınırlamak için max-width kullanıyoruz */
+    width: 1000px; /* Masaüstünde 1000px genişliğinde */
+    border-collapse: collapse;
+    margin: 0 auto; /* Tabloyu ortalar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-specs th, .vehicle-specs td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #dddddd; /* Hücre kenarlıkları için border */
+}
+
+.vehicle-specs th {
+    background-color: #fad291; /* Başlık rengi */
+    color: black;
+    font-weight: bold;
+}
+
+.vehicle-specs tr:nth-child(even) {
+    background-color: #fdefd4; /* Çift satırlar için arka plan rengi */
+}
+
+.vehicle-specs tr:nth-child(odd) {
+    background-color: #fcf8f3; /* Tek satırlar için arka plan rengi */
+}
+
+.vehicle-specs td {
+    color: #484b50; /* Metin rengi */
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .vehicle-specs {
+        width: 100%; /* Küçük ekranlarda tablo genişliği tam genişlik olur */
+    }
+
+    .vehicle-specs th, .vehicle-specs td {
+        padding: 8px; /* Mobilde paddingi küçültmek */
+    }
+
+    .vehicle-specs th {
+        font-size: 14px; /* Küçük ekranlarda başlık yazı boyutunu küçültmek */
+    }
+
+    .vehicle-specs td {
+        font-size: 13px; /* Küçük ekranlarda metin yazı boyutunu küçültmek */
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .vehicle-specs th, .vehicle-specs td {
+        font-size: 12px; /* Çok küçük ekranlarda yazı boyutunu daha da küçültmek */
+    }
+
+    
+}
