@@ -39,18 +39,26 @@ main {
   background-position: right bottom;
   transition: all 0.5s ease-out;
   background-clip: text;
+  -webkit-background-clip: text; /* Safari ve Chrome için */
   -webkit-text-fill-color: transparent;
   color: #fcf8f3;
   font-weight: bold;
-
 }
 
-.mb-2 .text-white:hover {
+.mb-2 .text-white:hover .mb-3 .text-white1:hover{
   background-position: left bottom;
 }
 
-.mb-3 .text-white1 {
+.mb-2 .text-white {
+  position: relative;
+  display: inline-block;
+  background-color: #Fe9600; /* Yedek stil */
+  color: white; /* Yedek stil */
+  font-weight: bold;
+}
 
+
+.mb-3 .text-white1 {
   position: relative;
   display: inline-block;
   color: transparent;
@@ -59,13 +67,17 @@ main {
   background-position: right bottom;
   transition: all 0.5s ease-out;
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* Safari ve Chrome için */
+  -webkit-text-fill-color: transparent; /* WebKit tabanlı tarayıcılar için */
   font-weight: bold;
 }
 
-.mb-3 .text-white1:hover {
-  background-position: left bottom;
+/* Eski tarayıcılar için yedek stil */
+.no-background-clip .text-white1 {
+  color: #Fe9600; /* Yedek renk */
+  background: none; /* Eski tarayıcılar için background kaldırılır */
 }
+
 
 .customLink .link-item {
   position: relative;
@@ -355,15 +367,28 @@ footer {
 .resim-img {
   width: 100%;
   /* Genişliği tam yapıyoruz */
-  height: 500px;
-  /* Burada istediğiniz sabit bir yükseklik belirliyoruz */
+  height: auto;
+  /* Yüksekliği otomatik yapıyoruz, genişliğe göre orantılı olarak değişecek */
+  max-height: 500px;
+  /* Yüksekliğin 500px'den fazla olmasını engelliyoruz */
   object-fit: cover;
-  /* Görselin yüksekliğe uyum sağlamasını ve taşan kısımların kesilmesini sağlıyoruz */
+  /* Görselin (video) yüksekliğe uyum sağlamasını ve taşan kısımların kesilmesini sağlıyoruz */
   margin-bottom: 20px;
   /* Altında boşluk bırakıyoruz */
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 36px;
+}
+
+video {
+  display: block;
+  /* Video öğesini block yaparak, daha iyi hizalanma sağlıyoruz */
+  width: 100%;
+  height: auto;
+  /* Video genişliği ekran boyutuna uyum sağlayacak */
+  max-height: 500px;
+  object-fit: cover;
   border-radius: 36px;
 }
 
