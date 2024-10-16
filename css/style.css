@@ -787,7 +787,8 @@ footer {
 
 @media (max-width: 768px) {
   .car-image {
-    width: 200px;
+    width: 360px;
+    margin-bottom: 100px; /* Yazı ile resim arasında boşluk bırakır */
   }
 
   .text-section h2 {
