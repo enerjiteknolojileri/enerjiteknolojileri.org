@@ -28,13 +28,7 @@ Web sitesi herhangi bir modern web tarayıcısında (örneğin Google Chrome, Mo
 - **Kategoriler**: Haberler, yenilenebilir enerji, teknoloji ve daha fazlası.
 - **İletişim**: Kullanıcıların görüş ve önerilerini paylaşabileceği bir iletişim formu.
 
-## Katkıda Bulunma
-Bu proje, bilgi paylaşımını desteklemek üzere özgürce erişilebilir hale getirilmiştir. Katkıda bulunmak isteyen kişiler, geri bildirimlerini ve içerik önerilerini [İletişim Sayfası](https://enerjiteknolojileri.org/iletisim) üzerinden bizlere ulaştırabilir.
-
 ## Lisans
 Bu proje, özgür bilgi paylaşımını desteklemek adına **Creative Commons** lisansı altında yayımlanmıştır. Daha fazla bilgi için lütfen lisans sayfamızı ziyaret ediniz.
 
----
-
-Herhangi bir soru ya da geri bildirim için bize [İletişim](https://enerjiteknolojileri.org/iletisim) sayfamızdan ulaşabilirsiniz. Enerji dolu bir gelecek için birlikte çalışıyoruz!
 
